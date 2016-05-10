@@ -38,7 +38,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozA-qf-ZK2">
                                                             <rect key="frame" x="0.0" y="309" width="574" height="133"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-ZI-MI9">
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terrainImage1" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-ZI-MI9">
                                                                     <rect key="frame" x="0.0" y="73" width="574" height="60"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY3-2U-yXZ">
@@ -82,7 +82,7 @@
                                                                 <constraint firstItem="vY3-2U-yXZ" firstAttribute="leading" secondItem="ozA-qf-ZK2" secondAttribute="leadingMargin" id="zta-tw-rmN"/>
                                                             </constraints>
                                                         </view>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beehive" translatesAutoresizingMaskIntoConstraints="NO" id="7VO-lE-MLL">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapRouteImage1" translatesAutoresizingMaskIntoConstraints="NO" id="7VO-lE-MLL">
                                                             <rect key="frame" x="0.0" y="46" width="574" height="182"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="182" id="AF8-ov-pEf"/>
@@ -245,6 +245,7 @@
                                             <outlet property="foregroundView" destination="7A6-NV-RAF" id="ZCa-9J-c1Y"/>
                                             <outlet property="infoLabel" destination="0rH-i9-PSN" id="nCi-EA-se4"/>
                                             <outlet property="infoTextField" destination="srd-J0-RYW" id="DiF-Dv-Ngm"/>
+                                            <outlet property="mapRouteImage" destination="7VO-lE-MLL" id="m9o-kC-MJI"/>
                                             <outlet property="nameLabel" destination="T89-6c-fcJ" id="pDN-jf-GDE"/>
                                             <outlet property="pathImage" destination="zXp-Ld-tfR" id="BrV-5j-TxM"/>
                                             <outlet property="terrainImage" destination="ygi-ZI-MI9" id="jXK-1G-fR6"/>
@@ -279,9 +280,9 @@
     <resources>
         <image name="Go Button" width="68" height="68"/>
         <image name="Sensory Path" width="598" height="599"/>
-        <image name="beehive" width="2048" height="1536"/>
         <image name="bg" width="750" height="1334"/>
         <image name="clock" width="200" height="200"/>
-        <image name="graph" width="1000" height="77"/>
+        <image name="mapRouteImage1" width="2048" height="1536"/>
+        <image name="terrainImage1" width="1000" height="77"/>
     </resources>
 </document>

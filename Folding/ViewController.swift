@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        routes.append(Route.init(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some grassed areas", terrainImage: "terrainImage1"))
-        routes.append(Route.init(name: "Bird Hide Path", foldingName: "Bird Hide Path", duration: "11 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some wet areas", terrainImage: "terrainImage1"))
-        routes.append(Route.init(name: "The Clump Path", foldingName: "The Clump Path", duration: "12 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some dry areas", terrainImage: "terrainImage1"))
-        routes.append(Route.init(name: "Bee Hive Path", foldingName: "Bee Hive Path", duration: "13 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some muddy areas", terrainImage: "terrainImage1"))
-        routes.append(Route.init(name: "Heathland path", foldingName: "Heathland path", duration: "14 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some epic areas", terrainImage: "terrainImage1"))
+        routes.append(Route.init(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some grassed areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
+        routes.append(Route.init(name: "Bird Hide Path", foldingName: "Bird Hide Path", duration: "11 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some wet areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
+        routes.append(Route.init(name: "The Clump Path", foldingName: "The Clump Path", duration: "12 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some dry areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
+        routes.append(Route.init(name: "Bee Hive Path", foldingName: "Bee Hive Path", duration: "13 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some muddy areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
+        routes.append(Route.init(name: "Heathland path", foldingName: "Heathland path", duration: "14 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some epic areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
 
         
         for _ in 0...routes.count {
