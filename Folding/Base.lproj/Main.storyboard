@@ -193,7 +193,7 @@
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sensoryPath" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-Ld-tfR">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sensory Path" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-Ld-tfR">
                                                             <rect key="frame" x="454" y="0.0" width="120" height="157"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="120" id="qAh-Mg-qF8"/>
@@ -246,6 +246,7 @@
                                             <outlet property="infoLabel" destination="0rH-i9-PSN" id="nCi-EA-se4"/>
                                             <outlet property="infoTextField" destination="srd-J0-RYW" id="DiF-Dv-Ngm"/>
                                             <outlet property="nameLabel" destination="T89-6c-fcJ" id="pDN-jf-GDE"/>
+                                            <outlet property="pathImage" destination="zXp-Ld-tfR" id="BrV-5j-TxM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -276,10 +277,10 @@
     </scenes>
     <resources>
         <image name="Go Button" width="68" height="68"/>
+        <image name="Sensory Path" width="598" height="599"/>
         <image name="beehive" width="2048" height="1536"/>
         <image name="bg" width="750" height="1334"/>
         <image name="clock" width="200" height="200"/>
         <image name="graph" width="1000" height="77"/>
-        <image name="sensoryPath" width="598" height="599"/>
     </resources>
 </document>
