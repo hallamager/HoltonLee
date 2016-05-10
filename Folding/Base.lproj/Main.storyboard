@@ -247,6 +247,7 @@
                                             <outlet property="infoTextField" destination="srd-J0-RYW" id="DiF-Dv-Ngm"/>
                                             <outlet property="nameLabel" destination="T89-6c-fcJ" id="pDN-jf-GDE"/>
                                             <outlet property="pathImage" destination="zXp-Ld-tfR" id="BrV-5j-TxM"/>
+                                            <outlet property="terrainImage" destination="ygi-ZI-MI9" id="jXK-1G-fR6"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

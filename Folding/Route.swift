@@ -16,15 +16,17 @@ class Route {
     let duration: String!
     let info: String!
     let terrainInfo: String!
+    let terrainImage: String!
     
 
     
-    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String) {
+    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String, terrainImage: String) {
         self.name = name
         self.foldingName = foldingName
         self.duration = duration
         self.info = info
         self.terrainInfo = terrainInfo
+        self.terrainImage = terrainImage
     }
     
 }
@@ -33,19 +35,19 @@ class Route {
 func buildRoutes() -> [Route] {
     var routes = [Route]()
 
-    let sensoryPath = Route(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "HI", terrainInfo: "")
+    let sensoryPath = Route(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "HI", terrainInfo: "", terrainImage: "")
     routes.append(sensoryPath)
 
-    let birdHidePath = Route(name: "Bird Hide Path", foldingName: "Sensory Path", duration: "20 MINS", info: "HI", terrainInfo: "")
+    let birdHidePath = Route(name: "Bird Hide Path", foldingName: "Sensory Path", duration: "20 MINS", info: "HI", terrainInfo: "", terrainImage: "")
     routes.append(birdHidePath)
     
-    let theClumpPath = Route(name: "The Clump Path", foldingName: "Sensory Path", duration: "15 MINS", info: "HI", terrainInfo: "")
+    let theClumpPath = Route(name: "The Clump Path", foldingName: "Sensory Path", duration: "15 MINS", info: "HI", terrainInfo: "", terrainImage: "")
     routes.append(theClumpPath)
     
-    let beeHivePath = Route(name: "Bee Hive Path", foldingName: "Sensory Path", duration: "12 MINS", info: "HI", terrainInfo: "")
+    let beeHivePath = Route(name: "Bee Hive Path", foldingName: "Sensory Path", duration: "12 MINS", info: "HI", terrainInfo: "", terrainImage: "")
     routes.append(beeHivePath)
     
-    let heathlandPath = Route(name: "Heathland path", foldingName: "Sensory Path", duration: "18 MINS", info: "HI", terrainInfo: "")
+    let heathlandPath = Route(name: "Heathland path", foldingName: "Sensory Path", duration: "18 MINS", info: "HI", terrainInfo: "", terrainImage: "")
     routes.append(heathlandPath)
     
     

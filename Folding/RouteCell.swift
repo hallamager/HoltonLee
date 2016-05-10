@@ -15,6 +15,7 @@ class RouteCell: FoldingCell {
     var route: Route!
     
     
+    @IBOutlet weak var terrainImage: UIImageView!
     @IBOutlet weak var pathImage: UIImageView!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var foldingNameLabel: UILabel!
@@ -38,6 +39,7 @@ class RouteCell: FoldingCell {
         durationLabel.text = route.duration
         infoLabel.text = route.terrainInfo
         pathImage.image = UIImage(named: route.name)
+        terrainImage.image = UIImage(named: route.terrainImage)
     }
     
     
