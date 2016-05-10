@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        routes.append(Route.init(name: "Sensory Path", duration: "Sensory Path", info: "Take a journey through the estate's varied environments"))
-        routes.append(Route.init(name: "Bird Hide Path", duration: "Bird Hide Path", info: "Take a journey through the estate's varied environments"))
-        routes.append(Route.init(name: "The Clump Path", duration: "The Clump Path", info: "Take a journey through the estate's varied environments"))
-        routes.append(Route.init(name: "Bee Hive Path", duration: "Bee Hive Path", info: "Take a journey through the estate's varied environments"))
-        routes.append(Route.init(name: "Heathland path", duration: "Heathland path", info: "Take a journey through the estate's varied environments"))
+        routes.append(Route.init(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some grassed areas"))
+        routes.append(Route.init(name: "Bird Hide Path", foldingName: "Bird Hide Path", duration: "11 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some wet areas"))
+        routes.append(Route.init(name: "The Clump Path", foldingName: "The Clump Path", duration: "12 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some dry areas"))
+        routes.append(Route.init(name: "Bee Hive Path", foldingName: "Bee Hive Path", duration: "13 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some muddy areas"))
+        routes.append(Route.init(name: "Heathland path", foldingName: "Heathland path", duration: "14 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some epic areas"))
 
         
         for _ in 0...routes.count {

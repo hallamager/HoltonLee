@@ -15,9 +15,12 @@ class RouteCell: FoldingCell {
     var route: Route!
     
     
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var foldingNameLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var infoTextField: UITextView!
     @IBOutlet weak var MapeImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
     override func awakeFromNib() {
         
         foregroundView.layer.cornerRadius = 5
@@ -28,8 +31,11 @@ class RouteCell: FoldingCell {
     }
     
     func setUpCell() {
+        foldingNameLabel.text = route.foldingName
         nameLabel.text = route.name
         infoTextField.text = route.info
+        durationLabel.text = route.duration
+        infoLabel.text = route.terrainInfo
     }
     
     

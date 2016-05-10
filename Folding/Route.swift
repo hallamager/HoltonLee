@@ -12,15 +12,19 @@ import CoreLocation
 class Route {
     
     let name: String!
+    let foldingName: String!
     let duration: String!
     let info: String!
+    let terrainInfo: String!
     
 
     
-    init(name: String, duration: String, info: String) {
+    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String) {
         self.name = name
+        self.foldingName = foldingName
         self.duration = duration
         self.info = info
+        self.terrainInfo = terrainInfo
     }
     
 }
@@ -29,19 +33,19 @@ class Route {
 func buildRoutes() -> [Route] {
     var routes = [Route]()
 
-    let sensoryPath = Route(name: "Sensory Path", duration: "I have 12-13 feet tall hips. My hips would have been twice as tall as a tall man.", info: "HI")
+    let sensoryPath = Route(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "HI", terrainInfo: "")
     routes.append(sensoryPath)
 
-    let birdHidePath = Route(name: "Bird Hide Path", duration: "I have 12-13 feet tall hips. My hips would have been twice as tall as a tall man.", info: "HI")
+    let birdHidePath = Route(name: "Bird Hide Path", foldingName: "Sensory Path", duration: "20 MINS", info: "HI", terrainInfo: "")
     routes.append(birdHidePath)
     
-    let theClumpPath = Route(name: "The Clump Path", duration: "I have 12-13 feet tall hips. My hips would have been twice as tall as a tall man.", info: "HI")
+    let theClumpPath = Route(name: "The Clump Path", foldingName: "Sensory Path", duration: "15 MINS", info: "HI", terrainInfo: "")
     routes.append(theClumpPath)
     
-    let beeHivePath = Route(name: "Bee Hive Path", duration: "I have 12-13 feet tall hips. My hips would have been twice as tall as a tall man.", info: "HI")
+    let beeHivePath = Route(name: "Bee Hive Path", foldingName: "Sensory Path", duration: "12 MINS", info: "HI", terrainInfo: "")
     routes.append(beeHivePath)
     
-    let heathlandPath = Route(name: "Heathland path", duration: "I have 12-13 feet tall hips. My hips would have been twice as tall as a tall man.", info: "HI")
+    let heathlandPath = Route(name: "Heathland path", foldingName: "Sensory Path", duration: "18 MINS", info: "HI", terrainInfo: "")
     routes.append(heathlandPath)
     
     
