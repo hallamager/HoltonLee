@@ -286,7 +286,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fwn-gD-GNB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.58896657509086581" green="0.86460336538461535" blue="0.4998911244889373" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.31697012533010621" green="0.86460336538461535" blue="0.37630258809047823" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
