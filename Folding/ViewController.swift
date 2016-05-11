@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let kCloseCellHeight: CGFloat = 160
+    let kCloseCellHeight: CGFloat = 159
     let kOpenCellHeight: CGFloat = 470
     
     var routes = buildRoutes()

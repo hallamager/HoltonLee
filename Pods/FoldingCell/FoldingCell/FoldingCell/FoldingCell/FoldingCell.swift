@@ -32,6 +32,7 @@ public class FoldingCell: UITableViewCell {
   var animationView: UIView?
   
   @IBInspectable public var itemCount: NSInteger = 2 //count of folding
+    
   
   @IBInspectable public var backViewColor: UIColor = UIColor.lightGrayColor()
   
