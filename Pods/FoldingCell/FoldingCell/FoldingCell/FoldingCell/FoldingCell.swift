@@ -52,11 +52,10 @@ public class FoldingCell: UITableViewCell {
     self.selectionStyle = .None
     
     containerView.layer.cornerRadius = foregroundView.layer.cornerRadius
-    containerView.layer.masksToBounds = true
-    foregroundView.layer.shadowOpacity = 1.7
-    foregroundView.layer.shadowOffset = CGSize(width: 8.0, height: 5.0)
-    foregroundView.layer.shadowRadius = 5.0
-    foregroundView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+    containerView.layer.shadowOpacity = foregroundView.layer.shadowOpacity
+    containerView.layer.shadowOffset = foregroundView.layer.shadowOffset
+    containerView.layer.shadowRadius = foregroundView.layer.shadowRadius
+    containerView.layer.shadowColor = foregroundView.layer.shadowColor
   }
   
   // MARK: configure

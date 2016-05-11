@@ -29,9 +29,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-7h-8ib">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="041-ka-VUR">
                                                     <rect key="frame" x="13" y="188" width="574" height="450"/>
                                                     <subviews>
@@ -227,9 +224,6 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hcJ-7h-8ib" firstAttribute="centerX" secondItem="7A6-NV-RAF" secondAttribute="centerX" id="3Ej-0D-tip"/>
-                                                <constraint firstItem="hcJ-7h-8ib" firstAttribute="top" secondItem="JTg-vu-TxJ" secondAttribute="top" id="CId-Pv-X9M"/>
-                                                <constraint firstItem="hcJ-7h-8ib" firstAttribute="leading" secondItem="JTg-vu-TxJ" secondAttribute="leading" id="EKM-x2-uLA"/>
                                                 <constraint firstItem="7A6-NV-RAF" firstAttribute="top" secondItem="JTg-vu-TxJ" secondAttribute="topMargin" constant="7" identifier="ForegroundViewTop" id="G6L-y2-pNz"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="041-ka-VUR" secondAttribute="trailing" constant="5" id="HrB-wc-XTm"/>
                                                 <constraint firstItem="7A6-NV-RAF" firstAttribute="leading" secondItem="JTg-vu-TxJ" secondAttribute="leadingMargin" constant="5" id="ect-e0-afW"/>
@@ -287,7 +281,6 @@
     <resources>
         <image name="Go Button" width="68" height="68"/>
         <image name="Sensory Path" width="598" height="599"/>
-        <image name="background1" width="375" height="667"/>
         <image name="clock" width="200" height="200"/>
         <image name="mapRouteImage1" width="2048" height="1536"/>
         <image name="terrainImage1" width="1000" height="77"/>

@@ -28,9 +28,12 @@ class RouteCell: FoldingCell {
     override func awakeFromNib() {
         
         foregroundView.layer.cornerRadius = 5
-        foregroundView.layer.masksToBounds = true
+        foregroundView.layer.shadowOpacity = 1.7
+        foregroundView.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        foregroundView.layer.shadowRadius = 5.0
+        foregroundView.layer.shadowColor = UIColor.lightGrayColor().CGColor
         
-        
+        backgroundColor = .clearColor()
         
         super.awakeFromNib()
     }
@@ -44,6 +47,7 @@ class RouteCell: FoldingCell {
         pathImage.image = UIImage(named: route.name)
         terrainImage.image = UIImage(named: route.terrainImage)
         mapRouteImage.image = UIImage(named: route.mapRouteImage)
+        pathColor.backgroundColor = route.color
     }
     
     

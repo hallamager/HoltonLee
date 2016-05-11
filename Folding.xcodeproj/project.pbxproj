@@ -16,6 +16,7 @@
 		273443FE1CE1D5A000049E80 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FD1CE1D5A000049E80 /* RouteCell.swift */; };
 		273444001CE1FF1400049E80 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FF1CE1FF1400049E80 /* Route.swift */; };
 		273444021CE202AA00049E80 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273444011CE202AA00049E80 /* MapKit.framework */; };
+		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		273444011CE202AA00049E80 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		549EEF622897E99FBA1E1FAD /* Pods-Folding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.release.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.release.xcconfig"; sourceTree = "<group>"; };
 		86E037A61EA705C93B46EBEF /* Pods-Folding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.debug.xcconfig"; sourceTree = "<group>"; };
+		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 		273443EA1CE1CEE900049E80 /* Folding */ = {
 			isa = PBXGroup;
 			children = (
+				A07B34DC1CE35B0B000504FE /* Extensions */,
 				273443EB1CE1CEE900049E80 /* AppDelegate.swift */,
 				273443ED1CE1CEE900049E80 /* ViewController.swift */,
 				273443EF1CE1CEE900049E80 /* Main.storyboard */,
@@ -87,6 +90,14 @@
 				273443F71CE1CEE900049E80 /* Info.plist */,
 			);
 			path = Folding;
+			sourceTree = "<group>";
+		};
+		A07B34DC1CE35B0B000504FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		FC96594613C982FFD0A6D052 /* Frameworks */ = {
@@ -224,6 +235,7 @@
 				273444001CE1FF1400049E80 /* Route.swift in Sources */,
 				273443EE1CE1CEE900049E80 /* ViewController.swift in Sources */,
 				273443EC1CE1CEE900049E80 /* AppDelegate.swift in Sources */,
+				A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

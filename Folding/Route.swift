@@ -6,7 +6,7 @@
 //  Copyright © 2016 Kyle Goslan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
 
 class Route {
@@ -18,10 +18,10 @@ class Route {
     let terrainInfo: String!
     let terrainImage: String!
     let mapRouteImage: String!
-    
+    let color: UIColor!
 
     
-    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String, terrainImage: String, mapRouteImage: String) {
+    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String, terrainImage: String, mapRouteImage: String, color: UIColor) {
         self.name = name
         self.foldingName = foldingName
         self.duration = duration
@@ -29,6 +29,7 @@ class Route {
         self.terrainInfo = terrainInfo
         self.terrainImage = terrainImage
         self.mapRouteImage = mapRouteImage
+        self.color = color
     }
     
 }
@@ -37,21 +38,53 @@ class Route {
 func buildRoutes() -> [Route] {
     var routes = [Route]()
 
-    let sensoryPath = Route(name: "Sensory Path", foldingName: "Sensory Path", duration: "10 MINS", info: "HI", terrainInfo: "", terrainImage: "", mapRouteImage: "")
-    routes.append(sensoryPath)
-
-    let birdHidePath = Route(name: "Bird Hide Path", foldingName: "Sensory Path", duration: "20 MINS", info: "HI", terrainInfo: "", terrainImage: "", mapRouteImage: "")
-    routes.append(birdHidePath)
-    
-    let theClumpPath = Route(name: "The Clump Path", foldingName: "Sensory Path", duration: "15 MINS", info: "HI", terrainInfo: "", terrainImage: "", mapRouteImage: "")
-    routes.append(theClumpPath)
-    
-    let beeHivePath = Route(name: "Bee Hive Path", foldingName: "Sensory Path", duration: "12 MINS", info: "HI", terrainInfo: "", terrainImage: "", mapRouteImage: "")
-    routes.append(beeHivePath)
-    
-    let heathlandPath = Route(name: "Heathland path", foldingName: "Sensory Path", duration: "18 MINS", info: "HI", terrainInfo: "", terrainImage: "", mapRouteImage: "")
-    routes.append(heathlandPath)
-    
+    routes.append(Route.init(name: "Sensory Path",
+        foldingName: "Sensory Path",
+        duration: "10 MINS",
+        info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some grassed areas",
+        terrainImage: "terrainImage1",
+        mapRouteImage: "mapRouteImage1",
+        color: UIColor(redX: 12, greenX: 242, blueX: 39, alphaX: 1)
+        )
+    )
+    routes.append(Route.init(name: "Bird Hide Path",
+        foldingName: "Bird Hide Path",
+        duration: "11 MINS", info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some wet areas",
+        terrainImage: "terrainImage1",
+        mapRouteImage: "mapRouteImage1",
+        color: UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1)
+        )
+    )
+    routes.append(Route.init(name: "The Clump Path",
+        foldingName: "The Clump Path",
+        duration: "12 MINS",
+        info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some dry areas",
+        terrainImage: "terrainImage1",
+        mapRouteImage: "mapRouteImage1",
+        color: UIColor(redX: 12, greenX: 200, blueX: 242, alphaX: 1)
+        )
+    )
+    routes.append(Route.init(name: "Bee Hive Path",
+        foldingName: "Bee Hive Path",
+        duration: "13 MINS", info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some muddy areas",
+        terrainImage: "terrainImage1",
+        mapRouteImage: "mapRouteImage1",
+        color: UIColor(redX: 0, greenX: 0, blueX: 0, alphaX: 1)
+        )
+    )
+    routes.append(Route.init(name: "Heathland path",
+        foldingName: "Heathland path",
+        duration: "14 MINS", info: "Take a journey through the estate's varied environments",
+        terrainInfo: "Variable path surface, some epic areas",
+        terrainImage: "terrainImage1",
+        mapRouteImage: "mapRouteImage1",
+        color: UIColor(redX: 242, greenX: 12, blueX: 43, alphaX: 1)
+        )
+    )
     
     return routes
 }
