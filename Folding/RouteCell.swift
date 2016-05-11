@@ -15,6 +15,7 @@ class RouteCell: FoldingCell {
     var route: Route!
     
     
+    @IBOutlet weak var pathColor: UIView!
     @IBOutlet weak var mapRouteImage: UIImageView!
     @IBOutlet weak var terrainImage: UIImageView!
     @IBOutlet weak var pathImage: UIImageView!
@@ -28,6 +29,7 @@ class RouteCell: FoldingCell {
         
         foregroundView.layer.cornerRadius = 5
         foregroundView.layer.masksToBounds = true
+        
         
         
         super.awakeFromNib()

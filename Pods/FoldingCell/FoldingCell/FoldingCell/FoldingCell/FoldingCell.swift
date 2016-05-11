@@ -33,7 +33,7 @@ public class FoldingCell: UITableViewCell {
   
   @IBInspectable public var itemCount: NSInteger = 2 //count of folding
   
-  @IBInspectable public var backViewColor: UIColor = UIColor.brownColor()
+  @IBInspectable public var backViewColor: UIColor = UIColor.lightGrayColor()
   
   var animationItemViews: [RotatedView]?
   
@@ -53,6 +53,10 @@ public class FoldingCell: UITableViewCell {
     
     containerView.layer.cornerRadius = foregroundView.layer.cornerRadius
     containerView.layer.masksToBounds = true
+    foregroundView.layer.shadowOpacity = 1.7
+    foregroundView.layer.shadowOffset = CGSize(width: 8.0, height: 5.0)
+    foregroundView.layer.shadowRadius = 5.0
+    foregroundView.layer.shadowColor = UIColor.lightGrayColor().CGColor
   }
   
   // MARK: configure

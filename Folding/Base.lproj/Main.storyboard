@@ -29,7 +29,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-7h-8ib">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-7h-8ib">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="041-ka-VUR">
@@ -176,7 +176,7 @@
                                                     <rect key="frame" x="13" y="15" width="574" height="165"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T89-6c-fcJ">
-                                                            <rect key="frame" x="5" y="8" width="558" height="23"/>
+                                                            <rect key="frame" x="8" y="8" width="558" height="23"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="23" id="xjP-X0-yBg"/>
                                                             </constraints>
@@ -184,15 +184,6 @@
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="textField" translatesAutoresizingMaskIntoConstraints="NO" id="srd-J0-RYW">
-                                                            <rect key="frame" x="0.0" y="37" width="145" height="111"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="145" id="LLO-Uk-WsU"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                        </textView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sensory Path" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-Ld-tfR">
                                                             <rect key="frame" x="454" y="0.0" width="120" height="157"/>
                                                             <constraints>
@@ -203,23 +194,32 @@
                                                             <rect key="frame" x="0.0" y="156" width="574" height="9"/>
                                                             <color key="backgroundColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="textField" translatesAutoresizingMaskIntoConstraints="NO" id="srd-J0-RYW">
+                                                            <rect key="frame" x="5" y="37" width="145" height="111"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="145" id="LLO-Uk-WsU"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="srd-J0-RYW" firstAttribute="bottom" secondItem="7A6-NV-RAF" secondAttribute="bottomMargin" constant="-9" id="04a-Ib-uhd"/>
                                                         <constraint firstItem="zXp-Ld-tfR" firstAttribute="trailing" secondItem="Zac-f7-1lZ" secondAttribute="trailing" id="0K0-Sk-lj5"/>
                                                         <constraint firstItem="T89-6c-fcJ" firstAttribute="top" secondItem="7A6-NV-RAF" secondAttribute="topMargin" id="0Z2-lW-Z3b"/>
-                                                        <constraint firstItem="Zac-f7-1lZ" firstAttribute="leading" secondItem="srd-J0-RYW" secondAttribute="leading" id="K5O-on-BxP"/>
+                                                        <constraint firstItem="Zac-f7-1lZ" firstAttribute="leading" secondItem="srd-J0-RYW" secondAttribute="leading" constant="-5" id="K5O-on-BxP"/>
                                                         <constraint firstAttribute="trailing" secondItem="zXp-Ld-tfR" secondAttribute="trailing" id="TnU-3o-g2H"/>
                                                         <constraint firstAttribute="height" constant="165" id="YWM-dm-dfJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="Zac-f7-1lZ" secondAttribute="bottom" id="Zke-QI-1lc"/>
                                                         <constraint firstItem="srd-J0-RYW" firstAttribute="top" secondItem="T89-6c-fcJ" secondAttribute="bottom" constant="6" id="Zs5-JU-mxh"/>
                                                         <constraint firstItem="zXp-Ld-tfR" firstAttribute="bottom" secondItem="7A6-NV-RAF" secondAttribute="bottomMargin" id="ayU-1M-KNa"/>
-                                                        <constraint firstAttribute="trailing" secondItem="T89-6c-fcJ" secondAttribute="trailing" constant="11" id="iKJ-KF-pXn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="T89-6c-fcJ" secondAttribute="trailing" constant="8" id="iKJ-KF-pXn"/>
                                                         <constraint firstItem="Zac-f7-1lZ" firstAttribute="top" secondItem="srd-J0-RYW" secondAttribute="bottom" constant="8" symbolic="YES" id="kma-cM-UjF"/>
-                                                        <constraint firstItem="srd-J0-RYW" firstAttribute="leading" secondItem="7A6-NV-RAF" secondAttribute="leading" id="lT0-p9-o9n"/>
+                                                        <constraint firstItem="srd-J0-RYW" firstAttribute="leading" secondItem="7A6-NV-RAF" secondAttribute="leading" constant="5" id="lT0-p9-o9n"/>
                                                         <constraint firstItem="zXp-Ld-tfR" firstAttribute="top" secondItem="7A6-NV-RAF" secondAttribute="top" id="r4p-VH-AA3"/>
-                                                        <constraint firstItem="T89-6c-fcJ" firstAttribute="leading" secondItem="7A6-NV-RAF" secondAttribute="leading" constant="5" id="yOH-hT-K83"/>
+                                                        <constraint firstItem="T89-6c-fcJ" firstAttribute="leading" secondItem="7A6-NV-RAF" secondAttribute="leading" constant="8" id="yOH-hT-K83"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -247,6 +247,7 @@
                                             <outlet property="infoTextField" destination="srd-J0-RYW" id="DiF-Dv-Ngm"/>
                                             <outlet property="mapRouteImage" destination="7VO-lE-MLL" id="m9o-kC-MJI"/>
                                             <outlet property="nameLabel" destination="T89-6c-fcJ" id="pDN-jf-GDE"/>
+                                            <outlet property="pathColor" destination="Zac-f7-1lZ" id="leD-ya-A1v"/>
                                             <outlet property="pathImage" destination="zXp-Ld-tfR" id="BrV-5j-TxM"/>
                                             <outlet property="terrainImage" destination="ygi-ZI-MI9" id="jXK-1G-fR6"/>
                                         </connections>
@@ -280,7 +281,7 @@
     <resources>
         <image name="Go Button" width="68" height="68"/>
         <image name="Sensory Path" width="598" height="599"/>
-        <image name="bg" width="750" height="1334"/>
+        <image name="background1" width="375" height="667"/>
         <image name="clock" width="200" height="200"/>
         <image name="mapRouteImage1" width="2048" height="1536"/>
         <image name="terrainImage1" width="1000" height="77"/>

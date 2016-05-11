@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         routes.append(Route.init(name: "Bee Hive Path", foldingName: "Bee Hive Path", duration: "13 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some muddy areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
         routes.append(Route.init(name: "Heathland path", foldingName: "Heathland path", duration: "14 MINS", info: "Take a journey through the estate's varied environments", terrainInfo: "Variable path surface, some epic areas", terrainImage: "terrainImage1", mapRouteImage: "mapRouteImage1"))
 
+
         
         for _ in 0...routes.count {
             cellHeights.append(kCloseCellHeight)
