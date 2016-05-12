@@ -54,7 +54,7 @@ class RouteCell: FoldingCell {
     override func animationDuration(itemIndex:NSInteger, type:AnimationType)-> NSTimeInterval {
         
         // durations count equal it itemCount
-        let durations = [0.33, 0.26, 0.26] // timing animation for each view
+        let durations = [0.20, 0.20, 0.20] // timing animation for each view
         return durations[itemIndex]
     }
     

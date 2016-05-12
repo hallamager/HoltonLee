@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         
         tableView.backgroundView = UIImageView(image: UIImage(named: "background1"))
         
+                
     }
 
 
