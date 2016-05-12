@@ -52,13 +52,13 @@ class ViewController: UIViewController {
     @IBAction func showHelp(sender: AnyObject) {
         if overlay == nil {
             overlay = UIImageView(frame: tableView.frame)
-            overlay!.image = UIImage(named: "instructionalimageoverlay")
+            overlay!.image = UIImage(named: "cell image overlay")
             overlay?.userInteractionEnabled = true
             self.tabBarController!.view.addSubview(overlay!)
             self.tabBarController!.tabBar.alpha = 0
             tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
             if cellBeenOpened {
-                overlay!.image = UIImage(named: "background1")
+                overlay!.image = UIImage(named: "fold image overlay")
             }
             
             let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
