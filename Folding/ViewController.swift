@@ -12,6 +12,8 @@ import FoldingCell
 
 class ViewController: UIViewController {
     
+    var overlay: UIImageView?
+    
     @IBOutlet weak var tableView: UITableView!
     
     let kCloseCellHeight: CGFloat = 160
@@ -44,7 +46,27 @@ class ViewController: UIViewController {
         }
         
     }
+    
 
+    @IBAction func showHelp(sender: AnyObject) {
+        if overlay == nil {
+            overlay = UIImageView(frame: tableView.frame)
+            overlay!.image = UIImage(named: "background1")
+            overlay?.userInteractionEnabled = true
+            view.addSubview(overlay!)
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
+            overlay!.addGestureRecognizer(tap)
+        }
+    }
+
+    func imageTapped() {
+        if let overlay = overlay {
+            overlay.removeFromSuperview()
+            
+        }
+        overlay = nil
+    }
 
 }
 
