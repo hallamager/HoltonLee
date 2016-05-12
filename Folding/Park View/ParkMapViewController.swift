@@ -12,6 +12,37 @@ enum MapType: Int {
 
 class ParkMapViewController: UIViewController {
     
+    var park = Park(filename: "MagicMountain")
+    
+    var route: Route?
+    
+    @IBOutlet weak var mapView: MKMapView!
+  
+    @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
+  
+    var selectedOptions = [MapOptionsType]()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let latDelta = park.overlayTopLeftCoordinate.latitude -
+            park.overlayBottomRightCoordinate.latitude
+        
+        // think of a span as a tv size, measure from one corner to another
+        let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
+        
+        let region = MKCoordinateRegionMake(park.midCoordinate, span)
+        
+        mapView.region = region
+        addOverlay()
+        addBoundary()
+        
+        if let route = route {
+            print("came form list")
+        }
+        
+    }
+    
     func addCharacterLocation() {
         let batmanFilePath = NSBundle.mainBundle().pathForResource("BatmanLocations", ofType: "plist")
         let batmanLocations = NSArray(contentsOfFile: batmanFilePath!)
@@ -86,35 +117,6 @@ class ParkMapViewController: UIViewController {
     func addOverlay() {
         let overlay = ParkMapOverlay(park: park)
         mapView.addOverlay(overlay)
-    }
-    
-    
-    var park = Park(filename: "MagicMountain")
-    
-    
-    @IBOutlet weak var mapView: MKMapView!
-  
-    
-    
-    
-  @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
-  
-  var selectedOptions = [MapOptionsType]()
-  
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let latDelta = park.overlayTopLeftCoordinate.latitude -
-            park.overlayBottomRightCoordinate.latitude
-        
-        // think of a span as a tv size, measure from one corner to another
-        let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
-        
-        let region = MKCoordinateRegionMake(park.midCoordinate, span)
-        
-        mapView.region = region
-        addOverlay()
-        addBoundary()
     }
     
     

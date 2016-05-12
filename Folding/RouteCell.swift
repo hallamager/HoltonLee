@@ -14,7 +14,6 @@ class RouteCell: FoldingCell {
     
     var route: Route!
     
-    
     @IBOutlet weak var pathColor: UIView!
     @IBOutlet weak var mapRouteImage: UIImageView!
     @IBOutlet weak var terrainImage: UIImageView!
@@ -39,6 +38,7 @@ class RouteCell: FoldingCell {
     }
     
     func setUpCell() {
+        infoTextField.userInteractionEnabled = false
         foldingNameLabel.text = route.foldingName
         nameLabel.text = route.name
         infoTextField.text = route.info

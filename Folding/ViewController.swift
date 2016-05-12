@@ -34,6 +34,16 @@ class ViewController: UIViewController {
         
                 
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "ParkMapViewController" {
+            let vc = segue.destinationViewController as! ParkMapViewController
+            vc.route = routes[0]
+        }
+        
+    }
 
 
 }

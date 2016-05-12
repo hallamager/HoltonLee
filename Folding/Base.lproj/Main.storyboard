@@ -36,6 +36,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PhC-Ta-8ax">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5" green="0.86460336540000005" blue="0.47896617870000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="cVR-5d-Sdv" kind="relationship" relationship="rootViewController" id="IRa-2H-D1T"/>
@@ -53,6 +57,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jDz-XP-TOm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.5" green="0.86460336540000005" blue="0.47896617870000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="FvC-3f-f3K" kind="relationship" relationship="rootViewController" id="AbD-ue-YXv"/>
@@ -62,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="475" y="537"/>
         </scene>
-        <!--Park Map View Controller-->
+        <!--Map-->
         <scene sceneID="NYo-h8-5Xr">
             <objects>
-                <viewController id="FvC-3f-f3K" customClass="ParkMapViewController" customModule="Folding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParkMapViewController" id="FvC-3f-f3K" customClass="ParkMapViewController" customModule="Folding" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Eg-hS-yJz"/>
                         <viewControllerLayoutGuide type="bottom" id="Q2E-jk-GHC"/>
@@ -89,16 +97,16 @@
                             <constraint firstItem="fmU-bw-GXo" firstAttribute="bottom" secondItem="Q2E-jk-GHC" secondAttribute="top" id="x0o-xc-1N9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Mfq-lR-9nV"/>
+                    <navigationItem key="navigationItem" title="Map" id="Mfq-lR-9nV"/>
                     <connections>
                         <outlet property="mapView" destination="fmU-bw-GXo" id="gTK-lY-s4V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntm-Wg-x9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="537"/>
+            <point key="canvasLocation" x="1245" y="584.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="pIH-H5-yam">
             <objects>
                 <viewController id="cVR-5d-Sdv" sceneMemberID="viewController">
@@ -111,7 +119,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="c0Y-Qp-sgt"/>
+                    <navigationItem key="navigationItem" title="Settings" id="c0Y-Qp-sgt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTc-br-3wh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,10 +227,6 @@
                                                                     <rect key="frame" x="0.0" y="80" width="574" height="1"/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </view>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V35-jy-ZAn">
-                                                                    <rect key="frame" x="498" y="7" width="68" height="68"/>
-                                                                    <state key="normal" image="Go Button"/>
-                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhE-Ob-ERv">
                                                                     <rect key="frame" x="33" y="20" width="72" height="21"/>
                                                                     <constraints>
@@ -242,6 +246,13 @@
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="XNO-Kc-L3J">
                                                                     <rect key="frame" x="8" y="20" width="23" height="22"/>
                                                                 </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V35-jy-ZAn">
+                                                                    <rect key="frame" x="498" y="7" width="68" height="68"/>
+                                                                    <state key="normal" image="Go Button"/>
+                                                                    <connections>
+                                                                        <segue destination="FvC-3f-f3K" kind="show" identifier="ParkMapViewController" id="PbH-mC-0h4"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
@@ -398,7 +409,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fwn-gD-GNB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.31697012533010621" green="0.86460336538461535" blue="0.37630258809047823" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.5" green="0.86460336540000005" blue="0.47896617870402686" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -423,4 +434,7 @@
         <image name="mapRouteImage1" width="1024" height="768"/>
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AbD-ue-YXv"/>
+    </inferredMetricsTieBreakers>
 </document>
