@@ -59,6 +59,7 @@ class ViewController: UIViewController {
             tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
             if cellBeenOpened {
                 overlay!.image = UIImage(named: "fold image overlay")
+                tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
             }
             
             let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))

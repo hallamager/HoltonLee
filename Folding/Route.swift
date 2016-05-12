@@ -19,9 +19,10 @@ class Route {
     let terrainImage: String!
     let mapRouteImage: String!
     let color: UIColor!
+    let colordiff: String!
 
     
-    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String, terrainImage: String, mapRouteImage: String, color: UIColor) {
+    init(name: String, foldingName: String, duration: String, info: String, terrainInfo: String, terrainImage: String, mapRouteImage: String, color: UIColor, colorDiff: String) {
         self.name = name
         self.foldingName = foldingName
         self.duration = duration
@@ -30,6 +31,7 @@ class Route {
         self.terrainImage = terrainImage
         self.mapRouteImage = mapRouteImage
         self.color = color
+        self.colordiff = colorDiff
     }
     
 }
@@ -45,7 +47,8 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some grassed areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 12, greenX: 242, blueX: 39, alphaX: 1)
+        color: UIColor(redX: 12, greenX: 242, blueX: 39, alphaX: 1),
+        colorDiff: "red"
         )
     )
     routes.append(Route.init(name: "Bird Hide Path",
@@ -54,7 +57,8 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some wet areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1)
+        color: UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1),
+        colorDiff: "green"
         )
     )
     routes.append(Route.init(name: "The Clump Path",
@@ -64,7 +68,8 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some dry areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 12, greenX: 200, blueX: 242, alphaX: 1)
+        color: UIColor(redX: 12, greenX: 200, blueX: 242, alphaX: 1),
+        colorDiff: "orange"
         )
     )
     routes.append(Route.init(name: "Bee Hive Path",
@@ -73,7 +78,8 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some muddy areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 0, greenX: 0, blueX: 0, alphaX: 1)
+        color: UIColor(redX: 0, greenX: 0, blueX: 0, alphaX: 1),
+        colorDiff: "red"
         )
     )
     routes.append(Route.init(name: "Heathland path",
@@ -82,7 +88,8 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some epic areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 242, greenX: 12, blueX: 43, alphaX: 1)
+        color: UIColor(redX: 242, greenX: 12, blueX: 43, alphaX: 1),
+        colorDiff: "green"
         )
     )
     

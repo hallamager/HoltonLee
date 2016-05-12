@@ -14,6 +14,7 @@ class RouteCell: FoldingCell {
     
     var route: Route!
     
+    @IBOutlet weak var colorDiff: UIImageView!
     @IBOutlet weak var pathColor: UIView!
     @IBOutlet weak var mapRouteImage: UIImageView!
     @IBOutlet weak var terrainImage: UIImageView!
@@ -48,6 +49,7 @@ class RouteCell: FoldingCell {
         terrainImage.image = UIImage(named: route.terrainImage)
         mapRouteImage.image = UIImage(named: route.mapRouteImage)
         pathColor.backgroundColor = route.color
+        colorDiff.image = UIImage(named: route.colordiff)
     }
     
     

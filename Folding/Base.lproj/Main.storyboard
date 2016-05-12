@@ -325,14 +325,23 @@
                                                             <rect key="frame" x="0.0" y="130" width="574" height="5"/>
                                                             <color key="backgroundColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         </view>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="5io-Bi-u0H">
+                                                            <rect key="frame" x="8" y="105" width="17" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="5Tg-yq-A0K"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="srd-J0-RYW" firstAttribute="bottom" secondItem="7A6-NV-RAF" secondAttribute="bottomMargin" constant="-9" id="04a-Ib-uhd"/>
                                                         <constraint firstItem="zXp-Ld-tfR" firstAttribute="trailing" secondItem="Zac-f7-1lZ" secondAttribute="trailing" id="0K0-Sk-lj5"/>
                                                         <constraint firstItem="T89-6c-fcJ" firstAttribute="top" secondItem="7A6-NV-RAF" secondAttribute="topMargin" id="0Z2-lW-Z3b"/>
+                                                        <constraint firstItem="5io-Bi-u0H" firstAttribute="leading" secondItem="T89-6c-fcJ" secondAttribute="leading" id="4j4-dD-BT4"/>
                                                         <constraint firstItem="Zac-f7-1lZ" firstAttribute="leading" secondItem="srd-J0-RYW" secondAttribute="leading" constant="-5" id="K5O-on-BxP"/>
                                                         <constraint firstAttribute="trailing" secondItem="zXp-Ld-tfR" secondAttribute="trailing" id="TnU-3o-g2H"/>
+                                                        <constraint firstItem="5io-Bi-u0H" firstAttribute="top" secondItem="T89-6c-fcJ" secondAttribute="bottom" constant="74" id="Xm6-T9-nv0"/>
+                                                        <constraint firstItem="Zac-f7-1lZ" firstAttribute="top" secondItem="5io-Bi-u0H" secondAttribute="bottom" constant="8" symbolic="YES" id="YOS-4k-WhJ"/>
                                                         <constraint firstAttribute="height" constant="135" id="YWM-dm-dfJ"/>
                                                         <constraint firstAttribute="bottom" secondItem="Zac-f7-1lZ" secondAttribute="bottom" id="Zke-QI-1lc"/>
                                                         <constraint firstItem="srd-J0-RYW" firstAttribute="top" secondItem="T89-6c-fcJ" secondAttribute="bottom" constant="6" id="Zs5-JU-mxh"/>
@@ -361,6 +370,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="MapeImage" destination="7VO-lE-MLL" id="8O1-gG-jE5"/>
+                                            <outlet property="colorDiff" destination="5io-Bi-u0H" id="BDX-7I-bqK"/>
                                             <outlet property="containerView" destination="041-ka-VUR" id="Z2K-5e-FES"/>
                                             <outlet property="durationLabel" destination="S07-re-5ii" id="v35-KW-Z8f"/>
                                             <outlet property="foldingNameLabel" destination="WYC-kR-v5w" id="ee6-TM-So9"/>
@@ -438,6 +448,7 @@
         <image name="Settings 3-52" width="26" height="26"/>
         <image name="Signpost-50" width="25" height="25"/>
         <image name="clock" width="100" height="100"/>
+        <image name="green" width="96" height="96"/>
         <image name="mapRouteImage1" width="1024" height="768"/>
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
