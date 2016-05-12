@@ -12,6 +12,7 @@ import FoldingCell
 
 class ViewController: UIViewController {
     
+    var cellBeenOpened = false
     var overlay: UIImageView?
     
     @IBOutlet weak var tableView: UITableView!
@@ -51,9 +52,14 @@ class ViewController: UIViewController {
     @IBAction func showHelp(sender: AnyObject) {
         if overlay == nil {
             overlay = UIImageView(frame: tableView.frame)
-            overlay!.image = UIImage(named: "background1")
+            overlay!.image = UIImage(named: "instructionalimageoverlay")
             overlay?.userInteractionEnabled = true
-            view.addSubview(overlay!)
+            self.tabBarController!.view.addSubview(overlay!)
+            self.tabBarController!.tabBar.alpha = 0
+            tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
+            if cellBeenOpened {
+                overlay!.image = UIImage(named: "background1")
+            }
             
             let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
             overlay!.addGestureRecognizer(tap)
@@ -63,7 +69,7 @@ class ViewController: UIViewController {
     func imageTapped() {
         if let overlay = overlay {
             overlay.removeFromSuperview()
-            
+            self.tabBarController!.tabBar.alpha = 1
         }
         overlay = nil
     }
@@ -93,6 +99,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITabBarDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! RouteCell
+        cellBeenOpened = true
         
         var duration = 0.0
         if cellHeights[indexPath.row] == kCloseCellHeight { // open cell

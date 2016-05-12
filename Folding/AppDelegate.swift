@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBar.tintColor = UIColor(redX: 127, greenX: 220, blueX: 122, alphaX: 1)
         
         
+        let navBar = UINavigationBar.appearance()
+        navBar.tintColor = .whiteColor()
+        
+        
         return true
     }
 
