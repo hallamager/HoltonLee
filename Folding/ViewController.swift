@@ -62,6 +62,8 @@ class ViewController: UIViewController {
                 tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), atScrollPosition: .Top, animated: true)
             }
             
+
+            
             let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped))
             overlay!.addGestureRecognizer(tap)
         }
@@ -123,6 +125,7 @@ extension ViewController: UITabBarDelegate {
         
         if cell is RouteCell {
             let foldingCell = cell as! RouteCell
+            cellBeenOpened = false
             
             if cellHeights[indexPath.row] == kCloseCellHeight {
                 foldingCell.selectedAnimation(false, animated: false, completion:nil)
