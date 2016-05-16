@@ -48,7 +48,6 @@
 		A007FBDF1CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBC91CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist */; };
 		A007FBE01CE4CD6C00DB2615 /* MagicMountain.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCA1CE4CD6C00DB2615 /* MagicMountain.plist */; };
 		A007FBE11CE4CD6C00DB2615 /* MagicMountainAttractions.plist in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCB1CE4CD6C00DB2615 /* MagicMountainAttractions.plist */; };
-		A007FBE21CE4CD6C00DB2615 /* mapbase.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCC1CE4CD6C00DB2615 /* mapbase.png */; };
 		A007FBE31CE4CD6C00DB2615 /* overlay_park.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */; };
 		A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */; };
 		A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */; };
@@ -101,7 +100,6 @@
 		A007FBC91CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
 		A007FBCA1CE4CD6C00DB2615 /* MagicMountain.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountain.plist; sourceTree = "<group>"; };
 		A007FBCB1CE4CD6C00DB2615 /* MagicMountainAttractions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MagicMountainAttractions.plist; sourceTree = "<group>"; };
-		A007FBCC1CE4CD6C00DB2615 /* mapbase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapbase.png; sourceTree = "<group>"; };
 		A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_park.png; sourceTree = "<group>"; };
 		A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overlay_park.svg; sourceTree = "<group>"; };
 		A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 				A007FBC91CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist */,
 				A007FBCA1CE4CD6C00DB2615 /* MagicMountain.plist */,
 				A007FBCB1CE4CD6C00DB2615 /* MagicMountainAttractions.plist */,
-				A007FBCC1CE4CD6C00DB2615 /* mapbase.png */,
 				A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */,
 				A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */,
 				A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */,
@@ -338,7 +335,6 @@
 				A007FBD61CE4CD6C00DB2615 /* ride@2x.png in Resources */,
 				A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */,
 				A007FBD11CE4CD6C00DB2615 /* firstaid.png in Resources */,
-				A007FBE21CE4CD6C00DB2615 /* mapbase.png in Resources */,
 				A007FBD31CE4CD6C00DB2615 /* food.png in Resources */,
 				A007FBAC1CE4CA6A00DB2615 /* Default.png in Resources */,
 				A007FBDF1CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist in Resources */,

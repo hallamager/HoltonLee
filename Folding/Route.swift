@@ -42,18 +42,19 @@ func buildRoutes() -> [Route] {
 
     routes.append(Route.init(name: "Sensory Path",
         foldingName: "Sensory Path",
-        duration: "10 MINS",
+        duration: "15 MINS",
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some grassed areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
         color: UIColor(redX: 12, greenX: 242, blueX: 39, alphaX: 1),
-        colorDiff: "red"
+        colorDiff: "green"
         )
     )
     routes.append(Route.init(name: "Bird Hide Path",
         foldingName: "Bird Hide Path",
-        duration: "11 MINS", info: "Take a journey through the estate's varied environments",
+        duration: "5 MINS",
+        info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some wet areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
@@ -63,7 +64,7 @@ func buildRoutes() -> [Route] {
     )
     routes.append(Route.init(name: "The Clump Path",
         foldingName: "The Clump Path",
-        duration: "12 MINS",
+        duration: "10 MINS",
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some dry areas",
         terrainImage: "terrainImage1",
@@ -72,24 +73,26 @@ func buildRoutes() -> [Route] {
         colorDiff: "orange"
         )
     )
-    routes.append(Route.init(name: "Bee Hive Path",
-        foldingName: "Bee Hive Path",
-        duration: "13 MINS", info: "Take a journey through the estate's varied environments",
+    routes.append(Route.init(name: "The Clump Fields",
+        foldingName: "The Clump Fields",
+        duration: "15 MINS",
+        info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some muddy areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
         color: UIColor(redX: 0, greenX: 0, blueX: 0, alphaX: 1),
-        colorDiff: "red"
+        colorDiff: "orange"
         )
     )
     routes.append(Route.init(name: "Heathland path",
         foldingName: "Heathland path",
-        duration: "14 MINS", info: "Take a journey through the estate's varied environments",
+        duration: "25 MINS",
+        info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some epic areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
         color: UIColor(redX: 242, greenX: 12, blueX: 43, alphaX: 1),
-        colorDiff: "green"
+        colorDiff: "red"
         )
     )
     
