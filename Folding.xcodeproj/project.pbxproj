@@ -11,7 +11,6 @@
 		273443EC1CE1CEE900049E80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443EB1CE1CEE900049E80 /* AppDelegate.swift */; };
 		273443EE1CE1CEE900049E80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443ED1CE1CEE900049E80 /* ViewController.swift */; };
 		273443F11CE1CEE900049E80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273443EF1CE1CEE900049E80 /* Main.storyboard */; };
-		273443F31CE1CEE900049E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273443F21CE1CEE900049E80 /* Assets.xcassets */; };
 		273443F61CE1CEE900049E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */; };
 		273443FE1CE1D5A000049E80 /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FD1CE1D5A000049E80 /* RouteCell.swift */; };
 		273444001CE1FF1400049E80 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273443FF1CE1FF1400049E80 /* Route.swift */; };
@@ -52,6 +51,8 @@
 		A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */; };
 		A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */; };
 		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
+		A857DB1D1CED533000B4162C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1C1CED533000B4162C /* Assets.xcassets */; };
+		A857DB1F1CED622C00B4162C /* SensoryRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1E1CED622C00B4162C /* SensoryRoute.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +60,6 @@
 		273443EB1CE1CEE900049E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273443ED1CE1CEE900049E80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		273443F01CE1CEE900049E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		273443F21CE1CEE900049E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		273443F51CE1CEE900049E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		273443F71CE1CEE900049E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		273443FD1CE1D5A000049E80 /* RouteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
@@ -104,6 +104,8 @@
 		A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overlay_park.svg; sourceTree = "<group>"; };
 		A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
 		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A857DB1C1CED533000B4162C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		A857DB1E1CED622C00B4162C /* SensoryRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SensoryRoute.plist; sourceTree = "<group>"; };
 		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,7 +160,7 @@
 				273443EF1CE1CEE900049E80 /* Main.storyboard */,
 				273443FD1CE1D5A000049E80 /* RouteCell.swift */,
 				273443FF1CE1FF1400049E80 /* Route.swift */,
-				273443F21CE1CEE900049E80 /* Assets.xcassets */,
+				A857DB1C1CED533000B4162C /* Assets.xcassets */,
 				A007FBB51CE4CC5800DB2615 /* mapbase.png */,
 				273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */,
 				273443F71CE1CEE900049E80 /* Info.plist */,
@@ -195,6 +197,7 @@
 				A007FBC41CE4CD6C00DB2615 /* character-locations */,
 				A007FBC81CE4CD6C00DB2615 /* character-locations.zip */,
 				A007FBC91CE4CD6C00DB2615 /* EntranceToGoliathRoute.plist */,
+				A857DB1E1CED622C00B4162C /* SensoryRoute.plist */,
 				A007FBCA1CE4CD6C00DB2615 /* MagicMountain.plist */,
 				A007FBCB1CE4CD6C00DB2615 /* MagicMountainAttractions.plist */,
 				A007FBCD1CE4CD6C00DB2615 /* overlay_park.png */,
@@ -313,6 +316,7 @@
 				A007FBB01CE4CA6A00DB2615 /* Park View-Info.plist in Resources */,
 				A007FBAD1CE4CA6A00DB2615 /* Default@2x.png in Resources */,
 				A007FBDC1CE4CD6C00DB2615 /* TazLocations.plist in Resources */,
+				A857DB1D1CED533000B4162C /* Assets.xcassets in Resources */,
 				A007FBDB1CE4CD6C00DB2615 /* BatmanLocations.plist in Resources */,
 				A007FBD21CE4CD6C00DB2615 /* firstaid@2x.png in Resources */,
 				A007FBB61CE4CC5800DB2615 /* mapbase.png in Resources */,
@@ -326,8 +330,8 @@
 				A007FBDD1CE4CD6C00DB2615 /* TweetyBirdLocations.plist in Resources */,
 				A007FBDE1CE4CD6C00DB2615 /* character-locations.zip in Resources */,
 				A007FBD41CE4CD6C00DB2615 /* food@2x.png in Resources */,
+				A857DB1F1CED622C00B4162C /* SensoryRoute.plist in Resources */,
 				A007FBD71CE4CD6C00DB2615 /* star.png in Resources */,
-				273443F31CE1CEE900049E80 /* Assets.xcassets in Resources */,
 				A007FBE31CE4CD6C00DB2615 /* overlay_park.png in Resources */,
 				A007FBE11CE4CD6C00DB2615 /* MagicMountainAttractions.plist in Resources */,
 				273443F11CE1CEE900049E80 /* Main.storyboard in Resources */,

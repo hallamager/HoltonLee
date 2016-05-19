@@ -29,6 +29,7 @@ class ParkMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let latDelta = park.overlayTopLeftCoordinate.latitude -
             park.overlayBottomRightCoordinate.latitude
         
@@ -41,7 +42,8 @@ class ParkMapViewController: UIViewController {
         mapView.region = region
         addOverlay()
         addBoundary()
-        addRoute()
+        addBirdHide()
+        addSensory()
         
         if let route = route {
             print("came form list")
@@ -85,8 +87,26 @@ class ParkMapViewController: UIViewController {
     }
     
     
-    func addRoute() {
+    func addBirdHide() {
         let thePath = NSBundle.mainBundle().pathForResource("EntranceToGoliathRoute", ofType: "plist")
+        let pointsArray = NSArray(contentsOfFile: thePath!)
+        
+        let pointsCount = pointsArray!.count
+        
+        var pointsToUse: [CLLocationCoordinate2D] = []
+        
+        for i in 0...pointsCount-1 {
+            let p = CGPointFromString(pointsArray![i] as! String)
+            pointsToUse += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
+        }
+        
+        let myPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsCount)
+        
+        mapView.addOverlay(myPolyline)
+    }
+    
+    func addSensory() {
+        let thePath = NSBundle.mainBundle().pathForResource("SensoryRoute", ofType: "plist")
         let pointsArray = NSArray(contentsOfFile: thePath!)
         
         let pointsCount = pointsArray!.count
@@ -137,7 +157,7 @@ class ParkMapViewController: UIViewController {
             case .MapPins:
                 addAttractionPins()
             case .MapRoute:
-                addRoute()
+                addBirdHide()
             case .MapBoundary:
                 addBoundary()
             case .MapCharacterLocation:
@@ -176,14 +196,14 @@ extension ParkMapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is ParkMapOverlay {
-            let magicMountainImage = UIImage(named: "mapbase")
+            let magicMountainImage = UIImage(named: "mapwhite")
             let overlayView = ParkMapOverlayView(overlay: overlay, overlayImage: magicMountainImage!)
             
             return overlayView
         } else if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
             lineView.strokeColor = UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1)
-            lineView.lineWidth = 4.5
+            lineView.lineWidth = 5.5
             
             return lineView
         } else if overlay is MKPolygon {
