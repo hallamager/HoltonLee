@@ -51,8 +51,8 @@
 		A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */; };
 		A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */; };
 		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
+		A096CD791CEE07FC00F3FE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A096CD781CEE07FC00F3FE45 /* Assets.xcassets */; };
 		A857DB1F1CED622C00B4162C /* SensoryRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1E1CED622C00B4162C /* SensoryRoute.plist */; };
-		FB931D321CEE065C009CDCE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB931D311CEE065C009CDCE0 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,9 +104,9 @@
 		A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overlay_park.svg; sourceTree = "<group>"; };
 		A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
 		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A096CD781CEE07FC00F3FE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A857DB1E1CED622C00B4162C /* SensoryRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SensoryRoute.plist; sourceTree = "<group>"; };
 		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB931D311CEE065C009CDCE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Desktop/App v.1/pv-starter-project-swift-updated/Park View/FoldingCell/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +160,8 @@
 				273443EF1CE1CEE900049E80 /* Main.storyboard */,
 				273443FD1CE1D5A000049E80 /* RouteCell.swift */,
 				273443FF1CE1FF1400049E80 /* Route.swift */,
+				A096CD781CEE07FC00F3FE45 /* Assets.xcassets */,
 				A007FBB51CE4CC5800DB2615 /* mapbase.png */,
-				FB931D311CEE065C009CDCE0 /* Assets.xcassets */,
 				273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */,
 				273443F71CE1CEE900049E80 /* Info.plist */,
 			);
@@ -336,7 +336,7 @@
 				273443F11CE1CEE900049E80 /* Main.storyboard in Resources */,
 				A007FBD51CE4CD6C00DB2615 /* ride.png in Resources */,
 				A007FBD61CE4CD6C00DB2615 /* ride@2x.png in Resources */,
-				FB931D321CEE065C009CDCE0 /* Assets.xcassets in Resources */,
+				A096CD791CEE07FC00F3FE45 /* Assets.xcassets in Resources */,
 				A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */,
 				A007FBD11CE4CD6C00DB2615 /* firstaid.png in Resources */,
 				A007FBD31CE4CD6C00DB2615 /* food.png in Resources */,
