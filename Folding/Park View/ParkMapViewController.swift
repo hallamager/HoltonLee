@@ -152,7 +152,7 @@ extension ParkMapViewController: MKMapViewDelegate {
         } else if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
             lineView.strokeColor = route!.color
-            lineView.lineWidth = 5.5
+            lineView.lineWidth = 8.0
             
             return lineView
         } else if overlay is MKPolygon {
