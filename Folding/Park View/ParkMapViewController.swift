@@ -41,14 +41,30 @@ class ParkMapViewController: UIViewController {
         
         mapView.region = region
         addOverlay()
-        addBoundary()
-        addBirdHide()
-        addSensory()
         
-        if let route = route {
-            print("came form list")
+        if route != nil {
+            drawRoute()
         }
         
+    }
+    
+    func drawRoute() {
+        print(route?.name)
+        let thePath = NSBundle.mainBundle().pathForResource(route!.name, ofType: "plist")
+        let pointsArray = NSArray(contentsOfFile: thePath!)
+        
+        let pointsCount = pointsArray!.count
+        
+        var pointsToUse: [CLLocationCoordinate2D] = []
+        
+        for i in 0...pointsCount-1 {
+            let p = CGPointFromString(pointsArray![i] as! String)
+            pointsToUse += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
+        }
+        
+        let myPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsCount)
+        
+        mapView.addOverlay(myPolyline)
     }
     
     func addCharacterLocation() {
@@ -81,48 +97,6 @@ class ParkMapViewController: UIViewController {
         mapView.addOverlay(tweety)
         
     }
-    func addBoundary() {
-        let polygon = MKPolygon(coordinates: &park.boundary, count: park.boundaryPointsCount)
-        mapView.addOverlay(polygon)
-    }
-    
-    
-    func addBirdHide() {
-        let thePath = NSBundle.mainBundle().pathForResource("EntranceToGoliathRoute", ofType: "plist")
-        let pointsArray = NSArray(contentsOfFile: thePath!)
-        
-        let pointsCount = pointsArray!.count
-        
-        var pointsToUse: [CLLocationCoordinate2D] = []
-        
-        for i in 0...pointsCount-1 {
-            let p = CGPointFromString(pointsArray![i] as! String)
-            pointsToUse += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
-        }
-        
-        let myPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsCount)
-        
-        mapView.addOverlay(myPolyline)
-    }
-    
-    func addSensory() {
-        let thePath = NSBundle.mainBundle().pathForResource("SensoryRoute", ofType: "plist")
-        let pointsArray = NSArray(contentsOfFile: thePath!)
-        
-        let pointsCount = pointsArray!.count
-        
-        var pointsToUse: [CLLocationCoordinate2D] = []
-        
-        for i in 0...pointsCount-1 {
-            let p = CGPointFromString(pointsArray![i] as! String)
-            pointsToUse += [CLLocationCoordinate2DMake(CLLocationDegrees(p.x), CLLocationDegrees(p.y))]
-        }
-        
-        let myPolyline = MKPolyline(coordinates: &pointsToUse, count: pointsCount)
-        
-        mapView.addOverlay(myPolyline)
-    }
-    
     
     func addAttractionPins() {
         let filePath = NSBundle.mainBundle().pathForResource("MagicMountainAttractions", ofType: "plist")
@@ -144,27 +118,7 @@ class ParkMapViewController: UIViewController {
         let overlay = ParkMapOverlay(park: park)
         mapView.addOverlay(overlay)
     }
-    
-    
-    func loadSelectedOptions() {
-        mapView.removeAnnotations(mapView.annotations)
-        mapView.removeOverlays(mapView.overlays)
-        
-        for option in selectedOptions {
-            switch (option) {
-            case .MapOverlay:
-                addOverlay()
-            case .MapPins:
-                addAttractionPins()
-            case .MapRoute:
-                addBirdHide()
-            case .MapBoundary:
-                addBoundary()
-            case .MapCharacterLocation:
-                addCharacterLocation()
-            }
-        }
-    }
+
     
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -172,11 +126,6 @@ class ParkMapViewController: UIViewController {
     optionsViewController.selectedOptions = selectedOptions
   }
   
-  @IBAction func closeOptions(exitSegue: UIStoryboardSegue) {
-    let optionsViewController = exitSegue.sourceViewController as! MapOptionsViewController
-    selectedOptions = optionsViewController.selectedOptions
-    self.loadSelectedOptions()
-  }
   
   @IBAction func mapTypeChanged(sender: AnyObject) {
     let mapType = MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)
@@ -202,7 +151,7 @@ extension ParkMapViewController: MKMapViewDelegate {
             return overlayView
         } else if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
-            lineView.strokeColor = UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1)
+            lineView.strokeColor = route!.color
             lineView.lineWidth = 5.5
             
             return lineView
@@ -211,13 +160,7 @@ extension ParkMapViewController: MKMapViewDelegate {
             polygonView.strokeColor = UIColor.magentaColor()
             
             return polygonView
-        } else if overlay is Character {
-            let circleView = MKCircleRenderer(overlay: overlay)
-            circleView.strokeColor = (overlay as! Character).color
-            
-            return circleView
         }
-        
         return MKOverlayRenderer()
     }
     

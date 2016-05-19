@@ -1,8 +1,7 @@
 import UIKit
 
 enum MapOptionsType: Int {
-  case MapBoundary = 0
-  case MapOverlay
+  case MapOverlay = 0
   case MapPins
   case MapCharacterLocation
   case MapRoute
@@ -35,8 +34,6 @@ class MapOptionsViewController: UIViewController, UITableViewDelegate, UITableVi
     let cell = tableView.dequeueReusableCellWithIdentifier("OptionCell") as UITableViewCell!
     let mapOptionsType = MapOptionsType(rawValue: indexPath.row)
     switch (mapOptionsType!) {
-    case .MapBoundary:
-      cell.textLabel!.text = "Boundary"
     case .MapOverlay:
       cell.textLabel!.text = "Map Overlay"
     case .MapPins:

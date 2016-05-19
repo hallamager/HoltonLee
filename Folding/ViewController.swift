@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     var cellBeenOpened = false
     var overlay: UIImageView?
+    var selectedRow = 0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
             cellHeights.append(kCloseCellHeight)
         }
         
-        tableView.backgroundView = UIImageView(image: UIImage(named: "background1"))
+        tableView.backgroundView = UIImageView(image: UIImage(named: "bg"))
         
                 
     }
@@ -43,7 +44,7 @@ class ViewController: UIViewController {
         
         if segue.identifier == "ParkMapViewController" {
             let vc = segue.destinationViewController as! ParkMapViewController
-            vc.route = routes[0]
+            vc.route = routes[selectedRow]
         }
         
     }
@@ -79,6 +80,13 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: RouteCellDelegate {
+    func buttonTapped(tag: Int) {
+        selectedRow = tag
+        performSegueWithIdentifier("ParkMapViewController", sender: nil)
+    }
+}
+
 extension ViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return cellHeights[indexPath.row]
@@ -93,7 +101,8 @@ extension ViewController: UITableViewDataSource {
         
         cell.route = routes[indexPath.row]
         cell.setUpCell()
-        
+        cell.delegate = self
+        cell.goButton.tag = indexPath.row
         
         return cell
     }
@@ -101,6 +110,8 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITabBarDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedRow = indexPath.row
+        
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! RouteCell
         cellBeenOpened = true
         

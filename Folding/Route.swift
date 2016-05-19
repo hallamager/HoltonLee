@@ -40,7 +40,7 @@ class Route {
 func buildRoutes() -> [Route] {
     var routes = [Route]()
 
-    routes.append(Route.init(name: "Sensory Path",
+    routes.append(Route(name: "Sensory Path",
         foldingName: "Sensory Path",
         duration: "15 MINS",
         info: "Take a journey through the estate's varied environments",
@@ -51,7 +51,7 @@ func buildRoutes() -> [Route] {
         colorDiff: "green"
         )
     )
-    routes.append(Route.init(name: "Bird Hide Path",
+    routes.append(Route(name: "Bird Hide Path",
         foldingName: "Bird Hide Path",
         duration: "5 MINS",
         info: "Take a journey through the estate's varied environments",
@@ -62,7 +62,7 @@ func buildRoutes() -> [Route] {
         colorDiff: "green"
         )
     )
-    routes.append(Route.init(name: "The Clump Path",
+    routes.append(Route(name: "The Clump Path",
         foldingName: "The Clump Path",
         duration: "10 MINS",
         info: "Take a journey through the estate's varied environments",
@@ -73,7 +73,7 @@ func buildRoutes() -> [Route] {
         colorDiff: "orange"
         )
     )
-    routes.append(Route.init(name: "The Clump Fields",
+    routes.append(Route(name: "The Clump Fields",
         foldingName: "The Clump Fields",
         duration: "15 MINS",
         info: "Take a journey through the estate's varied environments",
@@ -84,7 +84,7 @@ func buildRoutes() -> [Route] {
         colorDiff: "orange"
         )
     )
-    routes.append(Route.init(name: "Heathland path",
+    routes.append(Route(name: "Heathland path",
         foldingName: "Heathland path",
         duration: "25 MINS",
         info: "Take a journey through the estate's varied environments",

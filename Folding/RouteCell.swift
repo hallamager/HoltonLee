@@ -10,9 +10,14 @@ import UIKit
 import FoldingCell
 import MapKit
 
+protocol RouteCellDelegate {
+    func buttonTapped(tag:Int)
+}
+
 class RouteCell: FoldingCell {
     
     var route: Route!
+    var delegate: RouteCellDelegate?
     
     @IBOutlet weak var colorDiff: UIImageView!
     @IBOutlet weak var pathColor: UIView!
@@ -25,6 +30,8 @@ class RouteCell: FoldingCell {
     @IBOutlet weak var infoTextField: UITextView!
     @IBOutlet weak var MapeImage: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var goButton: UIButton!
+    
     override func awakeFromNib() {
         
         foregroundView.layer.cornerRadius = 5
@@ -36,6 +43,10 @@ class RouteCell: FoldingCell {
         backgroundColor = .clearColor()
         
         super.awakeFromNib()
+    }
+    
+    @IBAction func showMap(sender: AnyObject) {
+        delegate?.buttonTapped(goButton.tag)
     }
     
     func setUpCell() {

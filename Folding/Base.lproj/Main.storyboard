@@ -246,13 +246,13 @@
                                                                     <rect key="frame" x="4" y="6" width="16" height="16"/>
                                                                 </imageView>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V35-jy-ZAn">
-                                                                    <rect key="frame" x="506" y="14" width="60" height="60"/>
+                                                                    <rect key="frame" x="499" y="8" width="68" height="68"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="60" id="Gck-kE-bmu"/>
+                                                                        <constraint firstAttribute="width" constant="68" id="Gck-kE-bmu"/>
                                                                     </constraints>
                                                                     <state key="normal" image="Go Button"/>
                                                                     <connections>
-                                                                        <segue destination="FvC-3f-f3K" kind="show" identifier="ParkMapViewController" id="PbH-mC-0h4"/>
+                                                                        <action selector="showMap:" destination="vWU-KA-bGi" eventType="touchUpInside" id="bQO-Kf-9OK"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
@@ -263,7 +263,7 @@
                                                                 <constraint firstItem="XNO-Kc-L3J" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="6" id="80E-AR-V1r"/>
                                                                 <constraint firstItem="xhE-Ob-ERv" firstAttribute="trailing" secondItem="S07-re-5ii" secondAttribute="trailing" id="FBz-mV-OrK"/>
                                                                 <constraint firstItem="xhE-Ob-ERv" firstAttribute="leading" secondItem="S07-re-5ii" secondAttribute="leading" id="Fg2-2P-VlN"/>
-                                                                <constraint firstItem="V35-jy-ZAn" firstAttribute="trailing" secondItem="h1y-Jp-hr2" secondAttribute="trailingMargin" id="MoR-6W-Gc9"/>
+                                                                <constraint firstItem="V35-jy-ZAn" firstAttribute="trailing" secondItem="h1y-Jp-hr2" secondAttribute="trailingMargin" constant="1" id="MoR-6W-Gc9"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="79" id="UEB-c1-Kps"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leading" id="UfB-xd-20q"/>
                                                                 <constraint firstItem="S07-re-5ii" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leading" constant="21" id="Y8U-4L-nog"/>
@@ -271,9 +271,9 @@
                                                                 <constraint firstItem="XNO-Kc-L3J" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leadingMargin" constant="-4" id="cXL-oo-Lcp"/>
                                                                 <constraint firstAttribute="bottom" secondItem="o93-0Q-jJ0" secondAttribute="bottom" constant="1" id="iPN-hA-P7N"/>
                                                                 <constraint firstItem="S07-re-5ii" firstAttribute="top" secondItem="xhE-Ob-ERv" secondAttribute="bottom" id="jkS-oa-Rl9"/>
-                                                                <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="V35-jy-ZAn" secondAttribute="bottom" constant="5" id="kr5-Gb-ltF"/>
+                                                                <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="V35-jy-ZAn" secondAttribute="bottom" constant="3" id="kr5-Gb-ltF"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="XNO-Kc-L3J" secondAttribute="bottom" constant="57" id="lF4-EX-l92"/>
-                                                                <constraint firstItem="V35-jy-ZAn" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="14" id="rJ1-MS-KRd"/>
+                                                                <constraint firstItem="V35-jy-ZAn" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="8" id="rJ1-MS-KRd"/>
                                                                 <constraint firstItem="XNO-Kc-L3J" firstAttribute="centerY" secondItem="xhE-Ob-ERv" secondAttribute="centerY" id="utG-r3-SDr"/>
                                                                 <constraint firstAttribute="trailing" secondItem="o93-0Q-jJ0" secondAttribute="trailing" id="whC-kK-WQK"/>
                                                             </constraints>
@@ -379,6 +379,7 @@
                                             <outlet property="durationLabel" destination="S07-re-5ii" id="v35-KW-Z8f"/>
                                             <outlet property="foldingNameLabel" destination="WYC-kR-v5w" id="ee6-TM-So9"/>
                                             <outlet property="foregroundView" destination="7A6-NV-RAF" id="ZCa-9J-c1Y"/>
+                                            <outlet property="goButton" destination="V35-jy-ZAn" id="fpj-Nw-HwB"/>
                                             <outlet property="infoLabel" destination="0rH-i9-PSN" id="nCi-EA-se4"/>
                                             <outlet property="infoTextField" destination="srd-J0-RYW" id="DiF-Dv-Ngm"/>
                                             <outlet property="mapRouteImage" destination="7VO-lE-MLL" id="m9o-kC-MJI"/>
@@ -414,6 +415,7 @@
                     <size key="freeformSize" width="600" height="695"/>
                     <connections>
                         <outlet property="tableView" destination="RSU-bp-7kv" id="CPD-vl-WGY"/>
+                        <segue destination="FvC-3f-f3K" kind="show" identifier="ParkMapViewController" id="bPF-lQ-QEw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -448,7 +450,7 @@
         <image name="Go Button" width="68" height="68"/>
         <image name="Help-50" width="25" height="25"/>
         <image name="Map Marker-50" width="25" height="25"/>
-        <image name="Sensory Path" width="3000" height="2000"/>
+        <image name="Sensory Path" width="400" height="266"/>
         <image name="Settings 3-52" width="26" height="26"/>
         <image name="Signpost-50" width="25" height="25"/>
         <image name="clock" width="100" height="100"/>
@@ -457,6 +459,6 @@
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PbH-mC-0h4"/>
+        <segue reference="bPF-lQ-QEw"/>
     </inferredMetricsTieBreakers>
 </document>
