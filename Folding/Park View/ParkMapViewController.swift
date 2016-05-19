@@ -2,6 +2,8 @@ import UIKit
 import MapKit
 
 
+
+
 enum MapType: Int {
   case Standard = 0
   case Hybrid
@@ -15,6 +17,8 @@ class ParkMapViewController: UIViewController {
     var park = Park(filename: "MagicMountain")
     
     var route: Route?
+    
+    var color: UIColor!
     
     @IBOutlet weak var mapView: MKMapView!
   
@@ -33,9 +37,11 @@ class ParkMapViewController: UIViewController {
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
         
+        
         mapView.region = region
         addOverlay()
         addBoundary()
+        addRoute()
         
         if let route = route {
             print("came form list")
@@ -176,7 +182,8 @@ extension ParkMapViewController: MKMapViewDelegate {
             return overlayView
         } else if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
-            lineView.strokeColor = UIColor.greenColor()
+            lineView.strokeColor = UIColor(redX: 242, greenX: 242, blueX: 12, alphaX: 1)
+            lineView.lineWidth = 4.5
             
             return lineView
         } else if overlay is MKPolygon {

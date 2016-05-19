@@ -444,7 +444,7 @@
         <image name="Go Button" width="68" height="68"/>
         <image name="Help-50" width="25" height="25"/>
         <image name="Map Marker-50" width="25" height="25"/>
-        <image name="Sensory Path" width="299" height="299"/>
+        <image name="Sensory Path" width="3000" height="2000"/>
         <image name="Settings 3-52" width="26" height="26"/>
         <image name="Signpost-50" width="25" height="25"/>
         <image name="clock" width="100" height="100"/>
