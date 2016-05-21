@@ -224,7 +224,7 @@
                                                             <rect key="frame" x="0.0" y="227" width="574" height="82"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o93-0Q-jJ0">
-                                                                    <rect key="frame" x="0.0" y="79" width="574" height="2"/>
+                                                                    <rect key="frame" x="0.0" y="79" width="574" height="1"/>
                                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </view>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhE-Ob-ERv">
@@ -269,7 +269,7 @@
                                                                 <constraint firstItem="S07-re-5ii" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leading" constant="21" id="Y8U-4L-nog"/>
                                                                 <constraint firstItem="xhE-Ob-ERv" firstAttribute="top" secondItem="h1y-Jp-hr2" secondAttribute="top" constant="3" id="bPJ-7Y-mQO"/>
                                                                 <constraint firstItem="XNO-Kc-L3J" firstAttribute="leading" secondItem="h1y-Jp-hr2" secondAttribute="leadingMargin" constant="-4" id="cXL-oo-Lcp"/>
-                                                                <constraint firstAttribute="bottom" secondItem="o93-0Q-jJ0" secondAttribute="bottom" constant="1" id="iPN-hA-P7N"/>
+                                                                <constraint firstAttribute="bottom" secondItem="o93-0Q-jJ0" secondAttribute="bottom" constant="2" id="iPN-hA-P7N"/>
                                                                 <constraint firstItem="S07-re-5ii" firstAttribute="top" secondItem="xhE-Ob-ERv" secondAttribute="bottom" id="jkS-oa-Rl9"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="V35-jy-ZAn" secondAttribute="bottom" constant="3" id="kr5-Gb-ltF"/>
                                                                 <constraint firstItem="o93-0Q-jJ0" firstAttribute="top" secondItem="XNO-Kc-L3J" secondAttribute="bottom" constant="57" id="lF4-EX-l92"/>
