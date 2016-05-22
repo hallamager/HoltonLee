@@ -1,6 +1,7 @@
 import UIKit
 import MapKit
 import Pulsator
+import CoreLocation
 
 
 
@@ -28,6 +29,8 @@ class ParkMapViewController: UIViewController {
   
     var selectedOptions = [MapOptionsType]()
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,8 +52,9 @@ class ParkMapViewController: UIViewController {
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
         
-        
-        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
         
         mapView.region = region
         addOverlay()
@@ -184,5 +188,21 @@ extension ParkMapViewController: MKMapViewDelegate {
     }
     
 }
+
+extension ParkMapViewController: CLLocationManagerDelegate {
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let newLocation = locations.last
+        
+        if let newLocation = newLocation {
+            print(newLocation)
+        }
+        
+    }
+    
+}
+
+
 
 
