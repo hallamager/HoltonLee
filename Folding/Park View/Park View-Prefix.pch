@@ -1,6 +1,3 @@
-//
-// Prefix header for all source files of the 'Park View' target in the 'Park View' project
-//
 
 #import <Availability.h>
 

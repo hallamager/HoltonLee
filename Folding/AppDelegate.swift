@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Folding
-//
-//  Created by Kyle Goslan on 10/05/2016.
-//  Copyright © 2016 Kyle Goslan. All rights reserved.
-//
 
 import UIKit
 
