@@ -51,11 +51,11 @@
 		A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */; };
 		A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */; };
 		A07B34DB1CE35B06000504FE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */; };
-		A096CD791CEE07FC00F3FE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A096CD781CEE07FC00F3FE45 /* Assets.xcassets */; };
 		A096CD7B1CEE226900F3FE45 /* The Clump Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */; };
 		A096CD7D1CEE321D00F3FE45 /* The Clump Fields.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7C1CEE321D00F3FE45 /* The Clump Fields.plist */; };
 		A096CD7F1CF1D69200F3FE45 /* Heathland path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A096CD7E1CF1D69200F3FE45 /* Heathland path.plist */; };
 		A857DB1F1CED622C00B4162C /* Sensory Path.plist in Resources */ = {isa = PBXBuildFile; fileRef = A857DB1E1CED622C00B4162C /* Sensory Path.plist */; };
+		FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC164A61CEF351700894ED7 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,12 +107,12 @@
 		A007FBCE1CE4CD6C00DB2615 /* overlay_park.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = overlay_park.svg; sourceTree = "<group>"; };
 		A007FBCF1CE4CD6C00DB2615 /* overlay_park@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay_park@2x.png"; sourceTree = "<group>"; };
 		A07B34DA1CE35B06000504FE /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		A096CD781CEE07FC00F3FE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A096CD7A1CEE226900F3FE45 /* The Clump Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "The Clump Path.plist"; sourceTree = "<group>"; };
 		A096CD7C1CEE321D00F3FE45 /* The Clump Fields.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "The Clump Fields.plist"; path = "character-locations/The Clump Fields.plist"; sourceTree = "<group>"; };
 		A096CD7E1CF1D69200F3FE45 /* Heathland path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Heathland path.plist"; path = "character-locations/Heathland path.plist"; sourceTree = "<group>"; };
 		A857DB1E1CED622C00B4162C /* Sensory Path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Sensory Path.plist"; sourceTree = "<group>"; };
 		DC7AD420FB5DE737F3848360 /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC164A61CEF351700894ED7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Folding/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,6 @@
 				273443EF1CE1CEE900049E80 /* Main.storyboard */,
 				273443FD1CE1D5A000049E80 /* RouteCell.swift */,
 				273443FF1CE1FF1400049E80 /* Route.swift */,
-				A096CD781CEE07FC00F3FE45 /* Assets.xcassets */,
 				A007FBB51CE4CC5800DB2615 /* mapbase.png */,
 				273443F41CE1CEE900049E80 /* LaunchScreen.storyboard */,
 				273443F71CE1CEE900049E80 /* Info.plist */,
@@ -189,6 +188,7 @@
 				A007FBA21CE4CA6A00DB2615 /* Park View-Prefix.pch */,
 				A007FBA31CE4CA6A00DB2615 /* Park.swift */,
 				A007FBA41CE4CA6A00DB2615 /* ParkMapOverlay.swift */,
+				FBC164A61CEF351700894ED7 /* Assets.xcassets */,
 				A007FBA51CE4CA6A00DB2615 /* ParkMapOverlayView.swift */,
 				A007FBA61CE4CA6A00DB2615 /* ParkMapViewController.swift */,
 			);
@@ -334,6 +334,7 @@
 				A007FBDA1CE4CD6C00DB2615 /* annotation-images.zip in Resources */,
 				A007FBE41CE4CD6C00DB2615 /* overlay_park.svg in Resources */,
 				A007FBD01CE4CD6C00DB2615 /* cog.png in Resources */,
+				FBC164A71CEF351700894ED7 /* Assets.xcassets in Resources */,
 				A007FBAB1CE4CA6A00DB2615 /* Default-568h@2x.png in Resources */,
 				A007FBDD1CE4CD6C00DB2615 /* TweetyBirdLocations.plist in Resources */,
 				A007FBDE1CE4CD6C00DB2615 /* character-locations.zip in Resources */,
@@ -347,7 +348,6 @@
 				A007FBD51CE4CD6C00DB2615 /* ride.png in Resources */,
 				A007FBD61CE4CD6C00DB2615 /* ride@2x.png in Resources */,
 				A096CD7D1CEE321D00F3FE45 /* The Clump Fields.plist in Resources */,
-				A096CD791CEE07FC00F3FE45 /* Assets.xcassets in Resources */,
 				A007FBE51CE4CD6C00DB2615 /* overlay_park@2x.png in Resources */,
 				A007FBD11CE4CD6C00DB2615 /* firstaid.png in Resources */,
 				A007FBD31CE4CD6C00DB2615 /* food.png in Resources */,

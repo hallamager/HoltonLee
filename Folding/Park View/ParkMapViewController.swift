@@ -162,7 +162,7 @@ extension ParkMapViewController: MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is ParkMapOverlay {
-            let magicMountainImage = UIImage(named: "mapwhite")
+            let magicMountainImage = UIImage(named: "maptree")
             let overlayView = ParkMapOverlayView(overlay: overlay, overlayImage: magicMountainImage!)
             
             return overlayView
