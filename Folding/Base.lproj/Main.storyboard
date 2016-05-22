@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goy-qO-Jru">
+>>>>>>> Stashed changes
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -456,7 +460,11 @@
         <image name="Signpost-50" width="25" height="25"/>
         <image name="clock" width="100" height="100"/>
         <image name="green" width="56" height="22"/>
+<<<<<<< Updated upstream
         <image name="mapRouteImage1" width="1024" height="768"/>
+=======
+        <image name="mapRouteImage1" width="740" height="580"/>
+>>>>>>> Stashed changes
         <image name="terrainImage1" width="500" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>

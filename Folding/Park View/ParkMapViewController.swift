@@ -139,8 +139,7 @@ extension ParkMapViewController: CLLocationManagerDelegate {
     }
     
 }
-<<<<<<< HEAD
-=======
+
 
 
 //extension ViewController: CLLocationManagerDelegate {
@@ -230,4 +229,4 @@ extension ParkMapViewController: CLLocationManagerDelegate {
 
 
 
->>>>>>> origin/master
+
