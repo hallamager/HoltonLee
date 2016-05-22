@@ -3,5 +3,6 @@ use_frameworks!
 
 target 'Folding' do
 	pod 'FoldingCell'
+	pod "Pulsator”
 end
 

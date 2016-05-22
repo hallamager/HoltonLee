@@ -1,5 +1,7 @@
 import UIKit
 import MapKit
+import Pulsator
+
 
 
 
@@ -29,6 +31,15 @@ class ParkMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let pulsator = Pulsator()
+        view.layer.addSublayer(pulsator)
+        pulsator.start()
+        
+        pulsator.numPulse = 3
+        pulsator.radius = 240.0
+        pulsator.backgroundColor = UIColor(redX: 12, greenX: 200, blueX: 242, alphaX: 1).CGColor
+
+        
         
         let latDelta = park.overlayTopLeftCoordinate.latitude -
             park.overlayBottomRightCoordinate.latitude
@@ -37,6 +48,8 @@ class ParkMapViewController: UIViewController {
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
+        
+        
         
         
         mapView.region = region

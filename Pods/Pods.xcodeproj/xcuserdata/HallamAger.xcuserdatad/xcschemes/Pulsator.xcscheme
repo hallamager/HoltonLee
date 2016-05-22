@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B5BA74C97FA65CF302039BE5'
-               BlueprintName = 'FoldingCell'
+               BlueprintIdentifier = '496E20129F49F16A788F52A3'
+               BlueprintName = 'Pulsator'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'FoldingCell.framework'>
+               BuildableName = 'Pulsator.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
