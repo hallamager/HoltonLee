@@ -47,7 +47,7 @@ func buildRoutes() -> [Route] {
         terrainInfo: "Variable path surface, some grassed areas",
         terrainImage: "terrainImage1",
         mapRouteImage: "mapRouteImage1",
-        color: UIColor(redX: 12, greenX: 242, blueX: 39, alphaX: 1),
+        color: UIColor(redX: 255, greenX: 181, blueX: 90, alphaX: 1),
         colorDiff: "green"
         )
     )
