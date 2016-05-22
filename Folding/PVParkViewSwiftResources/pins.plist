@@ -14,13 +14,13 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Batman</string>
+		<string>Reception</string>
 		<key>location</key>
-		<string>{34.42581,-118.60089}</string>
+		<string>{50.721212,-2.056788}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Intensity: 6/10</string>
+		<string>Start area for all routes</string>
 	</dict>
 	<dict>
 		<key>name</key>

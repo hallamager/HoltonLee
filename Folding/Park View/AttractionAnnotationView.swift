@@ -15,13 +15,13 @@ class AttractionAnnotationView: MKAnnotationView {
         let attractionAnnotation = self.annotation as! AttractionAnnotation
         switch (attractionAnnotation.type) {
         case .AttractionFirstAid:
-            image = UIImage(named: "warning")
+            image = UIImage(named: "green")
         case .AttractionFood:
-            image = UIImage(named: "warning")
+            image = UIImage(named: "green")
         case .AttractionRide:
-            image = UIImage(named: "warning")
+            image = UIImage(named: "green")
         default:
-            image = UIImage(named: "warning")
+            image = UIImage(named: "green")
         }
     }
 }
