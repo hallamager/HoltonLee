@@ -202,7 +202,3 @@ extension ParkMapViewController: CLLocationManagerDelegate {
     }
     
 }
-
-
-
-
