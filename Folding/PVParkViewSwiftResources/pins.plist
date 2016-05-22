@@ -14,13 +14,21 @@
 	</dict>
 	<dict>
 		<key>name</key>
+<<<<<<< HEAD:Folding/PVParkViewSwiftResources/MagicMountainAttractions.plist
 		<string>Toilets</string>
+=======
+		<string>Reception</string>
+>>>>>>> Routes:Folding/PVParkViewSwiftResources/pins.plist
 		<key>location</key>
-		<string>{34.42581,-118.60089}</string>
+		<string>{50.721212,-2.056788}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
+<<<<<<< HEAD:Folding/PVParkViewSwiftResources/MagicMountainAttractions.plist
 		<string></string>
+=======
+		<string>Start area for all routes</string>
+>>>>>>> Routes:Folding/PVParkViewSwiftResources/pins.plist
 	</dict>
 	<dict>
 		<key>name</key>
