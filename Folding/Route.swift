@@ -57,7 +57,7 @@ func buildRoutes() -> [Route] {
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some wet areas",
         terrainImage: "terrainImage1",
-        mapRouteImage: "mapRouteImage1",
+        mapRouteImage: "mapRouteImage2",
         color: UIColor(redX: 225, greenX: 229, blueX: 90, alphaX: 1),
         colorDiff: "green"
         )
