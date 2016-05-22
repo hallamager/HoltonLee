@@ -68,7 +68,7 @@ func buildRoutes() -> [Route] {
         info: "Enjoy a walk to the Clump, with stunning views and our impressive weaving tree",
         terrainInfo: "Variable path surface, some dry areas",
         terrainImage: "terrainImage1",
-        mapRouteImage: "mapRouteImage1",
+        mapRouteImage: "mapRouteImage3",
         color: UIColor(redX: 225, greenX: 110, blueX: 110, alphaX: 1),
         colorDiff: "orange"
         )
@@ -79,7 +79,7 @@ func buildRoutes() -> [Route] {
         info: "A trail leading you to the sea, with a great vantage point",
         terrainInfo: "Variable path surface, some muddy areas",
         terrainImage: "terrainImage1",
-        mapRouteImage: "mapRouteImage1",
+        mapRouteImage: "mapRouteImage4",
         color: UIColor(redX: 216, greenX: 132, blueX: 253, alphaX: 1),
         colorDiff: "orange"
         )
@@ -90,7 +90,7 @@ func buildRoutes() -> [Route] {
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some epic areas",
         terrainImage: "terrainImage1",
-        mapRouteImage: "mapRouteImage1",
+        mapRouteImage: "mapRouteImage5",
         color: UIColor(redX: 241, greenX: 95, blueX: 140, alphaX: 1),
         colorDiff: "red"
         )
