@@ -38,7 +38,6 @@ class ParkMapViewController: UIViewController {
         let latDelta = park.overlayTopLeftCoordinate.latitude -
             park.overlayBottomRightCoordinate.latitude
         
-        // think of a span as a tv size, measure from one corner to another
         let span = MKCoordinateSpanMake(fabs(latDelta), 0.0)
         
         let region = MKCoordinateRegionMake(park.midCoordinate, span)
@@ -49,6 +48,8 @@ class ParkMapViewController: UIViewController {
         
         mapView.region = region
         addOverlay()
+        addAttractionPins()
+
         
         if route != nil {
             drawRoute()
@@ -74,37 +75,7 @@ class ParkMapViewController: UIViewController {
         
         mapView.addOverlay(myPolyline)
     }
-    
-    func addCharacterLocation() {
-        let batmanFilePath = NSBundle.mainBundle().pathForResource("BatmanLocations", ofType: "plist")
-        let batmanLocations = NSArray(contentsOfFile: batmanFilePath!)
-        let batmanPoint = CGPointFromString(batmanLocations![Int(rand()%4)] as! String)
-        let batmanCenterCoordinate = CLLocationCoordinate2DMake(CLLocationDegrees(batmanPoint.x), CLLocationDegrees(batmanPoint.y))
-        let batmanRadius = CLLocationDistance(max(5, Int(rand()%40)))
-        let batman = Character(centerCoordinate:batmanCenterCoordinate, radius:batmanRadius)
-        batman.color = UIColor.blueColor()
-        
-        let tazFilePath = NSBundle.mainBundle().pathForResource("TazLocations", ofType: "plist")
-        let tazLocations = NSArray(contentsOfFile: tazFilePath!)
-        let tazPoint = CGPointFromString(tazLocations![Int(rand()%4)] as! String)
-        let tazCenterCoordinate = CLLocationCoordinate2DMake(CLLocationDegrees(tazPoint.x), CLLocationDegrees(tazPoint.y))
-        let tazRadius = CLLocationDistance(max(5, Int(rand()%40)))
-        let taz = Character(centerCoordinate:tazCenterCoordinate, radius:tazRadius)
-        taz.color = UIColor.orangeColor()
-        
-        let tweetyFilePath = NSBundle.mainBundle().pathForResource("TweetyBirdLocations", ofType: "plist")
-        let tweetyLocations = NSArray(contentsOfFile: tweetyFilePath!)
-        let tweetyPoint = CGPointFromString(tweetyLocations![Int(rand()%4)] as! String)
-        let tweetyCenterCoordinate = CLLocationCoordinate2DMake(CLLocationDegrees(tweetyPoint.x), CLLocationDegrees(tweetyPoint.y))
-        let tweetyRadius = CLLocationDistance(max(5, Int(rand()%40)))
-        let tweety = Character(centerCoordinate:tweetyCenterCoordinate, radius:tweetyRadius)
-        tweety.color = UIColor.yellowColor()
-        
-        mapView.addOverlay(batman)
-        mapView.addOverlay(taz)
-        mapView.addOverlay(tweety)
-        
-    }
+
     
     func addAttractionPins() {
         let filePath = NSBundle.mainBundle().pathForResource("MagicMountainAttractions", ofType: "plist")
@@ -114,10 +85,11 @@ class ParkMapViewController: UIViewController {
             let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(point.x), CLLocationDegrees(point.y))
             let title = attraction["name"] as! String
             let typeRawValue = Int(attraction["type"] as! String)!
-            let type = AttractionType(rawValue: typeRawValue)!
+            let type = PointOfInterest(rawValue: typeRawValue)!
             let subtitle = attraction["subtitle"] as! String
-            let annotation = AttractionAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
+            let annotation = MapAnnotation(coordinate: coordinate, title: title, subtitle: subtitle, type: type)
             mapView.addAnnotation(annotation)
+            
         }
     }
     
@@ -173,7 +145,7 @@ extension ParkMapViewController: MKMapViewDelegate {
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = AttractionAnnotationView(annotation: annotation, reuseIdentifier: "Attraction")
+        let annotationView = MapAnnotationView(annotation: annotation, reuseIdentifier: "Attraction")
         annotationView.canShowCallout = true
         return annotationView
     }

@@ -4,57 +4,57 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>Cattle Grid</string>
+		<string>Reception</string>
 		<key>location</key>
-		<string>{50.722103,-2.061009}</string>
+		<string>{50.721212,-2.056522}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Inaccessible for wheelchairs</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Batman</string>
+		<string>Toilets</string>
 		<key>location</key>
 		<string>{34.42581,-118.60089}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Intensity: 6/10</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Ridler&apos;s Revenge</string>
+		<string>Bird Hide</string>
 		<key>location</key>
 		<string>{34.42430,-118.60074}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Intensity: 6/10</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>X2</string>
+		<string>View Point</string>
 		<key>location</key>
 		<string>{34.42156,-118.59556}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Intensity: 10/10</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Tatsu</string>
+		<string>Iron Age Hut</string>
 		<key>location</key>
 		<string>{34.42150,-118.59741}</string>
 		<key>type</key>
 		<string>1</string>
 		<key>subtitle</key>
-		<string>Intensity: 7/10</string>
+		<string></string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Panda Express</string>
+		<string>Spinal Care Facility</string>
 		<key>location</key>
 		<string>{34.42126,-118.595637}</string>
 		<key>type</key>
@@ -64,23 +64,13 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Cold Stone</string>
+		<string>Parking</string>
 		<key>location</key>
 		<string>{34.42401,-118.59495}</string>
 		<key>type</key>
 		<string>2</string>
 		<key>subtitle</key>
-		<string>Cost: $</string>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>First Aid</string>
-		<key>location</key>
-		<string>{34.42640,-118.59918}</string>
-		<key>type</key>
-		<string>3</string>
-		<key>subtitle</key>
-		<string>Call 911 For Emergency</string>
+		<string></string>
 	</dict>
 </array>
 </plist>
