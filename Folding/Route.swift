@@ -84,8 +84,8 @@ func buildRoutes() -> [Route] {
         colorDiff: "orange"
         )
     )
-    routes.append(Route(name: "Heathland path",
-        foldingName: "Heathland path",
+    routes.append(Route(name: "Heathland Path",
+        foldingName: "Heathland Path",
         duration: "25 MINS",
         info: "Take a journey through the estate's varied environments",
         terrainInfo: "Variable path surface, some epic areas",
