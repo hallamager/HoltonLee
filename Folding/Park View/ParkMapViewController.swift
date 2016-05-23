@@ -4,32 +4,25 @@ import CoreLocation
 
 
 
-
-
-enum MapType: Int {
-  case Standard = 0
-  case Hybrid
-  case Satellite
-
-}
-
-
 class ParkMapViewController: UIViewController {
     
-    var park = Park(filename: "MagicMountain")
+    var park = Park(filename: "HoltonLeeOverlay")
     
     var route: Route?
     
     var color: UIColor!
     
+    let locationManager = CLLocationManager()
+    
+    var locationsArray = [MyLocation]()
+    
+    var visitedArray = [String]()
+
+    
     @IBOutlet weak var mapView: MKMapView!
   
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
-  
-    var selectedOptions = [MapOptionsType]()
-    
-    let locationManager = CLLocationManager()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -99,25 +92,6 @@ class ParkMapViewController: UIViewController {
         mapView.addOverlay(overlay)
     }
 
-    
-  
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    let optionsViewController = segue.destinationViewController as! MapOptionsViewController
-    optionsViewController.selectedOptions = selectedOptions
-  }
-  
-  
-  @IBAction func mapTypeChanged(sender: AnyObject) {
-    let mapType = MapType(rawValue: mapTypeSegmentedControl.selectedSegmentIndex)
-    switch (mapType!) {
-    case .Standard:
-        mapView.mapType = MKMapType.Standard
-    case .Hybrid:
-        mapView.mapType = MKMapType.Hybrid
-    case .Satellite:
-        mapView.mapType = MKMapType.Satellite
-    }
-  }
 }
 
 
@@ -165,6 +139,91 @@ extension ParkMapViewController: CLLocationManagerDelegate {
     }
     
 }
+
+
+//extension ViewController: CLLocationManagerDelegate {
+//    
+//    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+//        
+//        let newLocation = locations.last
+//        
+//        if let newLocation = newLocation {
+//            //Locations array stores distance from set coordinates.
+//            for location in locationsArray {
+//                location.distance = newLocation.distanceFromLocation(CLLocation(latitude: location.coord.latitude, longitude: location.coord.longitude))
+//            }
+//            
+//            
+//            //Loactions array sorted so the closest region is first in array.
+//            locationsArray.sortInPlace { return $0.distance < $1.distance }
+//            
+//            //Prints name of closest array.
+//            print(locationsArray.first!.identifier)
+//            //print(locationsArray.first!.distance)
+//            
+//
+//        
+//    }
+//    
+//    
+//    
+//    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+//        
+//        //Adds identifier to Visited array (Won't add location again if region has already been visited).
+//        if !visitedArray.contains(region.identifier) {
+//            visitedArray.append(region.identifier)
+//        }
+//        
+//        for location in locationsArray {
+//            if location.regionDistance > 51 {
+//                location.isFound = false
+//            }
+//        }
+//        
+//        
+//        
+//        //first geocache opens with 2sec fade in animation.
+//        if  region.identifier == "Seafront" {
+//            
+//
+//                
+//            }
+//        
+//        
+//            
+//            
+//        }
+//        
+//        //Can only see geocache if user has been to Seafront region first
+//        if  region.identifier == "Oceanarium"  {
+//            
+//
+//                
+//            }
+//        
+//            
+//            
+//            
+//        }
+//        
+//        //Can only see Boscombe image if user has been to Oceanarium
+//        
+//        if  region.identifier == "Boscombe"  {
+//            
+//
+//            }
+//            
+//    
+//            
+//        }
+//        
+//        //Can only See final image if user has been to Boscombe.
+//        
+//        if  region.identifier == "Final"  {
+//            
+//
+//
+//            }
 
 
 
